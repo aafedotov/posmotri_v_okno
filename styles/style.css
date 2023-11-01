@@ -39,7 +39,6 @@ ol {
 }
 
 .visually-hidden {
-  position: absolute;
   inline-size: 1px;
   block-size: 1px;
   overflow: hidden;
@@ -244,16 +243,21 @@ ol {
   position: relative;
 }
 
-input[type='checkbox']:checked + span::after {
+input[type="checkbox"]:checked + span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+input[type="checkbox"]:checked + span::before {
   content: "";
+  display: inline-block;
   width: 15px;
   height: 15px;
-  z-index: 1;
   background: #FFF;
-  position: absolute;
-  left: 1px;
-  top: 1px;
+  margin: 1px 1px;
 }
+
 
 .button {
   color: inherit;
