@@ -56,7 +56,8 @@ ol {
   justify-content: space-between;
   gap: 30px;
   align-items: end;
-  padding: 233px 30px 133px 30px;
+
+  margin: 0 auto;
 }
 
 .content__list {
