@@ -56,7 +56,7 @@ ol {
   justify-content: space-between;
   gap: 30px;
   align-items: end;
-  padding: 133px 30px;
+  padding: 233px 30px 133px 30px;
 }
 
 .content__list {
@@ -111,6 +111,7 @@ ol {
 
 .result__video-container {
   position: relative;
+  height: 386px;
 }
 
 .content__list-item {
