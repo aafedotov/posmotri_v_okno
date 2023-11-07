@@ -9,12 +9,12 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
   block-size: 100%;
-  margin: auto;
+  min-width: 1200px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
+  margin: 0;
   background-color: #1b1919;
 }
 
@@ -32,7 +32,6 @@ fieldset {
   padding: 0;
 }
 
-
 ul,
 ol {
   list-style: none;
@@ -48,15 +47,19 @@ ol {
 }
 
 .content {
-  min-width: 1140px;
-  height: 800px;
+  /*min-width: 1140px;*/
+  /*height: 800px;*/
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
-  align-items: end;
+  align-items: flex-end;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
 
-  margin: 0 auto;
 }
 
 .content__list {
@@ -73,7 +76,6 @@ ol {
   background-color: transparent;
   display: none;
 }
-
 
 .content__details {
   display: flex;
@@ -141,6 +143,7 @@ ol {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-size: 18px;
 }
 
 .title {
@@ -204,6 +207,12 @@ ol {
   position: relative;
 }
 
+.search-form__label-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .search-form__label:has(:focus-visible) {
   border: 1px solid #FFF;
 }
@@ -257,7 +266,6 @@ input[type="checkbox"]:checked + span::before {
   background: #FFF;
   margin: 1px 1px;
 }
-
 
 .button {
   color: inherit;
