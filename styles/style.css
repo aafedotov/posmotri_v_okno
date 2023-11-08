@@ -74,17 +74,17 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  gap: 26px;
+  gap: 15px;
   max-width: 400px;
 }
 
 .result {
   height: 100%;
+  min-width: 711px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   gap: 16px;
-  flex-basis: 710px;
 }
 
 .search-form {
@@ -308,7 +308,7 @@ input[type="checkbox"]:checked + span::before {
 }
 
 .search-form__submit-button {
-  width: 184px;
+  width: 194px;
   min-height: 34px;
 }
 
