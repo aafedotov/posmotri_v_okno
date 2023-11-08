@@ -239,6 +239,10 @@ ol {
   outline: none;
 }
 
+.search-form__textfield:focus-visible {
+  outline: 1px solid #FFF;
+}
+
 .search-form__checkbox-list {
   display: flex;
   flex-direction: row;
@@ -263,7 +267,6 @@ ol {
 input[type="checkbox"]:checked + span {
   display: block;
   vertical-align: middle;
-  margin-left: 5px;
 }
 
 input[type="checkbox"]:checked + span::before {
