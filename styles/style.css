@@ -69,7 +69,6 @@ ol {
   overflow-x: auto;
 }
 
-
 .content__details {
   display: flex;
   flex-direction: column;
@@ -109,7 +108,7 @@ ol {
 
 .content__list-item {
   margin-bottom: 30px;
-
+  width: 100%;
 }
 
 .content__list-item:last-child {
@@ -313,7 +312,7 @@ input[type="checkbox"]:checked + span::before {
 }
 
 .more-button {
-  width: 399px;
+  width: 385px;
   min-height: 34px;
 }
 
@@ -332,4 +331,8 @@ input[type="checkbox"]:checked + span::before {
 
 .content__card-link:hover {
   text-decoration: underline;
+}
+
+.content__card-link:active {
+  background: #545050;
 }
